@@ -3,6 +3,11 @@ import { Metadata } from "next"
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
 import StoreTemplate from "@modules/store/templates"
 
+
+// belt-and-suspenders: no ISR; always fresh
+export const revalidate = 0
+
+
 export const metadata: Metadata = {
   title: "Store",
   description: "Explore all of our products.",
